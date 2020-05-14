@@ -1,15 +1,13 @@
 ---
 layout: cv
-title: Wode "Nimo" Ni
+title: 曹晶
+# phone: 13685760392
 email:
-  url: mailto:woden@cs.cmu.edu
-  text: woden@cs.cmu.edu
-homepage:
-  url: http://cs.cmu.edu/~woden
-  text: cs.cmu.edu/~woden
+  url: mailto:caojing9111@outlook.com
+  text: caojing9111@outlook.com
 ---
 
-# Wode **Ni**
+# 曹 晶
 
 <!--
 include contact information from the front matter
@@ -21,117 +19,85 @@ Supported arguments:
 
 {% include cv-contact.html %}
 
-## Education
+## 个人信息
+- 生日：1991.1.1
+- 籍贯：浙江金华
+- 电话：13685760392
 
-### **Carnegie Mellon University** `2018.9 -`
+## 教育信息
 
-```
-Pittsburgh, PA
-```
-
-- Ph.D. in Software Engineering
-- Co-advised by [Ken Koedinger](http://pact.cs.cmu.edu/koedinger.html) and [Josh Sunshine](http://www.cs.cmu.edu/~jssunshi/)
-
-### **Columbia University** `2016.9 - 2018.5`
+### **重庆大学（985/211） | 本科学士** `2010.9 - 2014.7`
 
 ```
-New York, NY
+重庆，虎溪校区，沙坪坝校区
 ```
 
-- B.S. in Computer Science, _Magna Cum Laude_
-- Vision, Graphics track
+- 专业：计算机科学与技术
+- 学院：计算机学院
 
-### **Dickinson College** `2013.9 - 2016.5`
+## 工作经历
 
-```
-Carlisle, PA
-```
+### **[联通(浙江)产业互联网有限公司](http://www.wochanye.com/about.html) | 金华市分公司办事处 | 软件研发部** `2019.4 - 至今`
 
-- B.S. in Computer Science, _Summa Cum Laude_
-- Computer Science Departmental Honors
+_项目研发经理_<br>
+负责相关项目的研发、对接以及维护工作。其中主要投入【金华河长制】研发项目，负责积分考核的研发以及一些已有模块的维护开发；同时也负责一些小型项目的需求对接研发，包括疫情期间对接金华市大数据局完成的健康码接口平台。除了研发工作，也承担部分项目研发管理以及运维工作，包括但不限于项目管理、相关开发工具（gitlab/jenkins等）的安装部署、服务器系统安装维护等等。
 
-## Publications
+### **[微贷网](https://www.weidai.com.cn/home/about/brand.html) | 研发中心** `2017.3 - 2019.3`
 
-### **How Domain Experts Create Conceptual Diagrams and Implications for Tool Design**
+_Java研发工程师_<br>
+主要负责公司主营业务服务号**微贷网服务**的运营支撑研发工作，包括公司业务相关功能以及公众号活动运营类功能研发。期间，达成了公众号关注人数破百万的部门目标，荣获相关团队荣誉奖。
 
-**Wode Ni\***, Dor Ma'ayan\*, Katherine Ye, Chinmay Kulkarni, Joshua Sunshine<br>
-_Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI'20), to appear._
+### **[恒生电子](http://www.hundsun.com/about.aspx) | 资产管理事业部** `2014.3 - 2017.3`
 
-### [**Defining Visual Narratives for Mathematics Declaratively**](http://plateau-workshop.org/assets/papers-2019/9.pdf)
+_软件研发工程师_<br>
+2014年毕业后校招进入恒生电子工作。任职期间，主要负责资产管理系统O32部分现货业务功能以及基于[FIX协议](https://www.onixs.biz/fix-protocol.html)、旨在打通客户资管系统与O32系统数据对接的相关功能模块。
 
-Max Krieger, **Wode Ni**, and Joshua Sunshine.<br>
-_Evaluation and Usability of Programming Languages and Tools (PLATEAU 2019), co-located with UIST._<br>
-[[PDF](http://plateau-workshop.org/assets/papers-2019/9.pdf)]
-[[slides](https://www.cs.cmu.edu/~woden/assets/plateau-19-presentation.pdf)]
+## 主要项目
 
-### [**Designing Declarative Language Tutorials: a Guided and Individualized Approach**](http://plateau-workshop.org/assets/papers-2019/2.pdf)
+### **金华河长制** `2019.4 - `
+金华河长制项目属于浙江省治水办以及金华治水办发起，联通(浙江)产业互联网有限公司承接的河湖管理平台项目。
+旨在通过建立河湖管理档案、记录并管理各级行政单位河长巡河情况，有效支撑起金华市以及各县市对河湖治理工作的落实以及相关目标的达成。<br>
+<br>
+项目研发过程中，主要负责二期需求中对于河长考核、数据统计的功能实现。
+技术选型上，出于对原有项目架构的风格一致性考虑，对于这两块功能采用单独mysql建库以及单独搭建springboot项目的实现方案；
+微服务架构采用springcloud框架，统一资源配置以及服务发现采用了阿里nacos框架，而微服务治理运维方面通过docker容器来完成。<br>
+<br>
+项目方面，按时按需完成了相关模块的研发工作，目前正在各县市进行试用中。
 
-Anael Kuperwajs Cohen, **Wode Ni**, and Joshua Sunshine.<br>
-_Evaluation and Usability of Programming Languages and Tools (PLATEAU 2019), co-located with UIST._<br>
-[[PDF](http://plateau-workshop.org/assets/papers-2019/2.pdf)]
-[[slides](https://www.cs.cmu.edu/~woden/assets/plateau-19-presentation.pdf)]
+### **浙江健康码接口平台** `2020.2-2020.4`
+浙江健康码接口平台属于金华联通向金华市大数据申请健康码接口资源，并在此基础上提供内部访客系统对接使用的接口平台。接口平台支持查询浙江省省内健康码级别、健康码所属人相关信息。
+技术选型上采用了springboot+mybatis为基础，配合spring-security实现了对调用方ip白名单的安全限制功能。在第一个版本的系统实现中，主要通过Restful接口
+对外进行资源暴露。
+实现上，整体考虑健康码接口要求规范（三级秘钥设定appSecret/refreshSecret/requestSecret）后，通过可重入锁限制refreshSecret刷新过程，并且通过Phaser限制其他健康码接口请求线程，
+等待刷新线程完成秘钥刷新后放行其他健康码请求线程。通过并发测试验证实现正确性没有问题。
 
-### [**Substance and Style: domain-specific languages for mathematical diagrams**](https://2017.splashcon.org/event/dsldi-2017-substance-and-style-domain-specific-languages-for-mathematical-diagrams)
+### **公众号微贷网服务** `2017.3 - 2019.3`
+微信服务号「微贷网服务」属于公司面向普通注册用户、提供相关业务功能服务并兼顾用户关注增长的移动端入口平台。主要建设目标包括业务服务和服务号自身品牌建设。<br><br>
+技术选型上采用研发中心统一标准，web框架为springmvc/springboot，微服务通过zk进行服务发现、dubbo框架与其他业务模块（包括用户中心、订单中心等）进行交互，同时对于松耦合的业务以来通过
+rocketmq进行数据流交互。项目采用灰度发布模式，共运行有三个服务实例，相关session同步以及分布式资源竞争控制采用redis进行实现完成。<br><br>
+服务治理方面，通过elk进行日志聚合查找、通过cat进行服务状态统计以及调用链追踪查错。
+除了日常业务功能维护，也负责实现服务号相关活动运营（推广拉新）功能实现，包括但不限于相关拉新活动佣金提取、h5小游戏功能、积分商城等。
+维护服务号项目期间，达成关注人数破百万级别既定目标。
 
-**Wode Ni\***, Katherine Ye\*, Joshua Sunshine, Jonathan Aldrich, and Keenan Crane.<br> _Domain-Specific Language Design and Implementation (DSLDI 2017), co-located with SPLASH._ <br>
-[[PDF](https://www.cs.cmu.edu/~woden/assets/dsldi.pdf)]
-[[slides](https://www.cs.cmu.edu/~woden/assets/dsldi-presentation.pdf)]
-[[www](http://penrose.ink)]
-[[repo](https://github.com/penrose/penrose)]
+### **FIX系统网关** `2014.9 - 2017.3`
+FIX系统网关作为维系恒生O32系统与客户资管系统的关键节点，承担了对FIX业务数据的编解码以及业务处理逻辑。支持包括现货/期货指令下达/修改等相关业务。
 
-### [**Whiteboard Scanning Using Super-Resolution**](http://scholar.dickinson.edu/student_honors/221/)
 
-**Wode Ni**.<br> _Dickinson College Honors Theses. Paper 221._<br>
-[[PDF](https://www.cs.cmu.edu/~woden/assets/superres.pdf)]
+## 研发技能
 
-----
-
-## Experience
-
-### **Carnegie Mellon University, Research Experiences for Undergraduate** `2017.5 - 2017.8`
-
-_Research Assistant_<br>
-**Penrose** is a system that automatically visualizes mathematics using two domain-specific languages: **Substance** and **Style**. Co-advised by [Jonathan Aldrich](https://www.cs.cmu.edu/~./aldrich/), [Keenan Crane](https://www.cs.cmu.edu/~kmcrane/), [Joshua Sunshine](http://www.cs.cmu.edu/~jssunshi/), and [Katherine Ye](https://www.cs.cmu.edu/~kqy/), I designed and implemented the Style language, and extended the Substance language to support functions and logically quantified statements.
-
-### **Columbia University, Computer Graphics and User Interfaces Lab** `2017.1 - 2017.5`
-
-_Research Assistant_<br>
-Worked with prof. Steven Feiner, on **Cyber Affordance Visualization in Augumented Reality** project. Developed a Microsoft Hololens application that visualizes the Columbia campus in AR environment.
-
-### **AsiaInfo** `2015.6 - 2015.8`
-
-_Software Engineering Intern_<br>
-Worked on server-side web applications and server deployment tools.
-
-## Advising
-
-Max Krieger (CMU, independent research & [REUSE](https://www.cmu.edu/scs/isr/reuse/)) `CMU, 2018 - Now` <br>
-Courtney Miller (New College of Florida, [REUSE](https://www.cmu.edu/scs/isr/reuse/)) `CMU, 2019` <br>
-Anael Kuperwajs Cohen (Macalester College, [REUSE](https://www.cmu.edu/scs/isr/reuse/)) `CMU, 2019` <br>
-
-## Teaching
-
-Teaching Assistant, **Programming Languages and Translators (COMS 4115)** `Columbia, 2017 - 2018` <br>
-Teaching Assistant, **Introduction to Java II (COMP 132)** `Dickinson, 2016` <br>
-Peer Tutor, **Data Structures and Problem Solving (COMP 232)** `Dickinson, 2016` <br>
-Computer Lab Consultant `Dickinson, 2014 - 2016` <br>
-
-## Honors & Awards
-
-Phi Beta Kappa `Dickinson, 2018` <br>
-Excellence in Computer Science Award `Columbia, 2018` <br>
-Travel Award PL Mentoring Workshop (PLMW) `SPLASH, 2018` <br>
-Tau Beta Pi, Engineering Honor Society `Columbia, 2017` <br>
-Computer Science Departmental Honors `Dickinson, 2016` <br>
-Pi Mu Epsilon, Mathematics Honor Society `Dickinson, 2016` <br>
-Upsilon Pi Epsilon, Computer Science Honor Society `Dickinson, 2016` <br>
-Alpha Lambda Delta, First year Honor Society `Dickinson, 2013`<br>
-John Montgomery Scholarship `Dickinson, 2013` <br>
-
-## Service
-
-Research Experiences for Undergraduates in Software Engineering (REUSE) Admission Committee `CMU, 2019`
+* 主要开发语言为java8，常用技术栈为springboot/springmvc，持久化框架mybatis。
+* 熟悉常用的中间件使用，如zookeeper、redis缓存、rocketmq消息中间件等。
+* 熟悉微信公众号开发，有实际微信支付实现经验。
+* 熟悉git代码管理工具gitlab，熟悉常用git命令，对于分支模型有一定了解和应用。
+* 熟悉maven/nexus包管理工具，对于maven依赖管理/插件应用/骨架工程均有相关应用经验。
+* 熟悉常用的linux相关命令以及jdk自带命令，
+* 良好的英文听说读写能力，能较好地理解相关英文技术文档。
 
 <!-- ### Footer
 
 Last updated: May 2013 -->
+
+## 参与项目
+
+### **浙师大留学生实习项目** `2019.11 - 2020.1`
+负责浙师大留学生（软件工程专业）在金华联通的实习工作，包括前期评定、实习沟通指导等内容。
